@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/pos_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Indicator Position"
+                style="@style/HeadingText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <lib.kingja.switchbutton.SwitchMultiButton
+                android:id="@+id/multiSwitchHorizontalHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pos_heading"
+                app:switchTabs="@array/indicator_position_horizontal"
+                app:selectedTab="1"
+                style="@style/MultiSwitch"/>
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/camText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/camText"
+                android:src="@drawable/camera" />
+
+            <LinearLayout
+                android:id="@+id/camText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/switchCamera"
+                app:layout_constraintStart_toEndOf="@+id/imgCamera"
+                app:layout_constraintTop_toBottomOf="@+id/multiSwitchHorizontalHeight">
+
+                <TextView
+                    android:id="@+id/tvCamTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camera_indicator_title"
+                    style="@style/HeadingText" />
+
+                <TextView
+                    android:id="@+id/tvCamDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/camera_indicator_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/camText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/camText" />
+
+            <ImageView
+                android:id="@+id/imgMic"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/micText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/micText"
+                android:src="@drawable/microphone" />
+
+            <LinearLayout
+                android:id="@+id/micText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/switchMic"
+                app:layout_constraintStart_toEndOf="@+id/imgMic"
+                app:layout_constraintTop_toBottomOf="@+id/camText">
+
+                <TextView
+                    android:id="@+id/tvMicTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/microphone_indicator_title"
+                    style="@style/HeadingText" />
+
+                <TextView
+                    android:id="@+id/tvMicDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/microphone_indicator_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/micText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/micText" />
+
+
+
+
+            <ImageView
+                android:id="@+id/imgVibration"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/vibText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/vibText"
+                android:src="@drawable/speaker" />
+
+            <LinearLayout
+                android:id="@+id/vibText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/switchSound"
+                app:layout_constraintStart_toEndOf="@+id/imgVibration"
+                app:layout_constraintTop_toBottomOf="@id/micText">
+
+                <TextView
+                    android:id="@+id/tvVibTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vibration_alert_title"
+                    style="@style/HeadingText" />
+
+                <TextView
+                    android:id="@+id/tvVibDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/vibration_alert_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/vibText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/vibText" />
+
+
+            <ImageView
+                android:id="@+id/imgLogs"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/logsText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/logsText"
+                android:src="@drawable/logs" />
+
+            <LinearLayout
+                android:id="@+id/logsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@+id/switchLogs"
+                app:layout_constraintStart_toEndOf="@+id/imgLogs"
+                app:layout_constraintTop_toBottomOf="@+id/vibText">
+
+                <TextView
+                    android:id="@+id/tvLogsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indicator_logs_title"
+                    style="@style/HeadingText" />
+
+                <TextView
+                    android:id="@+id/tvLogsDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/indicator_logs_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/switchLogs"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/logsText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/logsText"
+                app:tint="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/imgSettings"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/settingsText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/settingsText"
+                android:src="@drawable/controls" />
+
+            <LinearLayout
+                android:id="@+id/settingsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@+id/switchSettings"
+                app:layout_constraintStart_toEndOf="@+id/imgSettings"
+                app:layout_constraintTop_toBottomOf="@+id/logsText">
+
+                <TextView
+                    android:id="@+id/tvSettingsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/customization_center_title"
+                    style="@style/HeadingText"/>
+
+                <TextView
+                    android:id="@+id/tvSettingsDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/customization_center_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/switchSettings"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/settingsText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/settingsText"
+                app:tint="@color/colorAccent" />
+
+            <ImageView
+                android:id="@+id/imgAccess"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/accessText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/accessText"
+                android:src="@drawable/access" />
+
+            <LinearLayout
+                android:id="@+id/accessText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@+id/switchLogs"
+                app:layout_constraintStart_toEndOf="@+id/imgAccess"
+                app:layout_constraintTop_toBottomOf="@+id/switchSettings">
+
+                <TextView
+                    android:id="@+id/accessTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indicator_access_title"
+                    style="@style/HeadingText" />
+
+                <TextView
+                    android:id="@+id/accessDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/indicator_access_description"
+                    style="@style/SubHeadingText" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

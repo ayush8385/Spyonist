@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cybera1.spyonist">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/search"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/search"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ThirdEye">
+        <activity
+            android:name=".AppsAccessActivity"
+            android:exported="false" />
+        <activity android:name=".Logs.AccessLogsActivity" />
+
+        <activity android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+
+        <service
+            android:name=".IndicatorService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="camera|microphone|location"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/indicator_service" />
+        </service>
+    </application>
+
+</manifest>

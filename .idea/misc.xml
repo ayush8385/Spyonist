@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/activity_access_logs.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/activity_apps_access.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/activity_customization.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/activity_main.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/activity_splash.xml" value="0.2453125" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/app_bar.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/cardview_layout.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/content_credits.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/content_customization.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/content_service_disabled.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/content_service_enabled.xml" value="0.2" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/indicators_layout.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/Spyonist/app/src/main/res/layout/item_access_logs.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/dotted_line.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_baseline_arrow_back.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_caution.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_delete.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_dot.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_heart.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_help.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_home.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/drawable/ic_ring.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/activity_access_logs.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/activity_apps_access.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/activity_customization.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/activity_home.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/app_bar.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/cardview_layout.xml" value="0.259375" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/content_credits.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/content_customization.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/content_service_disabled.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/content_service_enabled.xml" value="0.2" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/indicators_layout.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/layout/item_access_logs.xml" value="0.2" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20925925925925926" />
+        <entry key="..\:/Users/AYUSH MISHRA/Desktop/ThirdEye/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20925925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

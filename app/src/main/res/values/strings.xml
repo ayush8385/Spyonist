@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Spyonist</string>
+
+    <string name="made_by">Made in India 🇮🇳</string>
+
+    <string name="notification_alert_summary">You will get an active notification on the status bar while an app is using your camera or microphone.</string>
+
+    <string name="indicators_disabled_description">Click on the above Switch and Turn on the Privacy Indicator in the Accessibility Settings</string>
+    <string name="privacy_indicators_disabled_title">Enable Spyonist</string>
+
+    <string name="camera_indicator_title">Camera Indicator</string>
+    <string name="camera_indicator_description">This feature enables Camera Indicator which will notify every time when a third-party app tried to access your Camera.</string>
+
+    <string name="microphone_indicator_title">Microphone Indicator</string>
+    <string name="microphone_indicator_description">This feature enables Microphone Indicator which will notify every time when a third-party app tried to access your Microphone.</string>
+
+    <string name="vibration_alert_title">Sound Alert</string>
+    <string name="vibration_alert_description">This feature enables sound when someone tries to access your Camera/Microphone.</string>
+
+    <string name="indicator_logs_title">Usage Logs</string>
+    <string name="indicator_logs_description">View the summary of Camera and Microphone usage by various apps.</string>
+
+    <string name="customization_center_title">Customize Indicators</string>
+    <string name="customization_center_description">You can customise how indicators to be appeared. Configure the look of Indicators</string>
+
+    <string name="service_description">When this service is enabled it lets \'Spyonist App\' to display indicators
+        every time a third-party app or a service uses camera or microphone on any screen.
+        \n\nThis Service/App doesn\'t have any permission to use internet or your device\'s camera, microphone or any other Hardware. And will NOT gather any data whatsoever.
+    </string>
+    <string name="service_summary">Get notified every time a third-party app uses camera or microphone</string>
+
+    <string name="indicator_access_title">Apps Access</string>
+    <string name="indicator_access_description">Select the Camera/Microphone enabled apps to Show/Hide the indicators and play sound</string>
+
+    <string-array name="indicator_position_horizontal">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+    </string-array>
+</resources>

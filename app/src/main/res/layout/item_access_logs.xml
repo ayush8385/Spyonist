@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="6dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/ivIndicator"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:srcCompat="@drawable/camera_indicator2"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_view">
+
+        <TextView
+            android:id="@+id/tvTimeStamp"
+            style="@style/SubtitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="10:52 AM" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/SubHeadingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="31 May 2021" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/image_view"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout"
+        app:layout_constraintTop_toTopOf="@id/image_view"
+        app:layout_constraintBottom_toBottomOf="@id/image_view">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            style="@style/HeadingText"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Name" />
+
+        <TextView
+            android:id="@+id/tvAppId"
+            style="@style/SubHeadingText"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="com.app.pakagename" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

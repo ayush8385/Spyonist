@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#432FBF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#E6E5E5</color>
+
+    <color name="black">#FFFFFF</color>
+    <color name="white">#000000</color>
+
+    <color name="grey100">#F5F5F5</color>
+
+    <color name="positiveButtonTextColor">#000000</color>
+    <color name="negativeButtonTextColor">#000000</color>
+    <color name="bottomSheetDividerColor">#F5F5F5</color>
+</resources>

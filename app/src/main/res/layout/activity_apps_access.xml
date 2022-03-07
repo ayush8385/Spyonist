@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".AppsAccessActivity">
+
+    <fragment
+        android:id="@+id/usage_fragment"
+        android:name="com.cybera1.spyonist.Logs.AppBarFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+      android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardMaxElevation="5dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/usage_fragment"
+        android:backgroundTint="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/padlock"
+
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/Apk_Name"
+                android:layout_toRightOf="@id/imageview"
+                android:layout_toEndOf="@id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Show on LockScreen"
+                android:textSize="19sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                />
+            <!--            <TextView-->
+            <!--                android:id="@+id/Apk_Package_Name"-->
+            <!--                android:layout_below="@id/Apk_Name"-->
+            <!--                android:layout_toRightOf="@id/imageview"-->
+            <!--                android:layout_toLeftOf="@+id/switchAccess"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="adlkablDS JA SJD AS"-->
+            <!--                android:layout_marginLeft="4dp"-->
+            <!--                android:textColor="@color/grey100"-->
+
+            <!--                />-->
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/onlockscreen"
+                android:checked="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="60dp"
+        android:clipToPadding="false"
+        tools:listitem="@layout/cardview_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

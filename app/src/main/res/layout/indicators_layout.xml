@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_indicators"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:alpha="0.8"
+        app:cardCornerRadius="13dp">
+
+        <LinearLayout
+            android:id="@+id/ll_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:id="@+id/iv_cam"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/camera_indicator2"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/iv_mic"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/microphone_indicator2"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint"
+                android:visibility="visible"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

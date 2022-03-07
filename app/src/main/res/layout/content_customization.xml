@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/tvHeading0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/titleForeGround"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indicators Foreground Colour"
+                    style="@style/HeadingText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="customise the foreground color of the Indicators. Click on the Tile aside to select a color."
+                    android:layout_marginTop="5dp"
+                    style="@style/SubHeadingText"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/titleForeGround"
+                android:layout_width="35dp"
+                android:layout_height="35sp"
+                android:background="@drawable/square_rounded"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHeading0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHeading0"
+                app:srcCompat="@drawable/square_rounded"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="5dp"
+                android:padding="2dp"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/tvHeading01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/titleBackGround"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeading0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Indicators Background Colour"
+                    style="@style/HeadingText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="customise the background color of the Indicators. Click on the Tile aside to select a color."
+                    android:layout_marginTop="5dp"
+                    style="@style/SubHeadingText"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/titleBackGround"
+                android:layout_width="35dp"
+                android:layout_height="35sp"
+                android:padding="2dp"
+                android:background="@drawable/square_rounded"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHeading01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHeading01"
+                app:srcCompat="@drawable/square_rounded"
+                android:elevation="5dp"
+                app:tint="@color/colorAccent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
